@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#
 # Define here the models for your scraped items
 #
 # See documentation in:
@@ -8,7 +8,11 @@
 import scrapy
 
 
-class HspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class HouseItem(scrapy.Item):
+    crawl_time    = scrapy.Field()  # 截取信息的时间
+    area          = scrapy.Field()  # 面积(m^2)
+    price         = scrapy.Field()  # 单价
+    total_price   = scrapy.Field()  # 总价
+    resblock_id   = scrapy.Field()  # 小区ID
+    resblock_name = scrapy.Field()  # 小区名称
+    url           = scrapy.Field()  # 链家URL
