@@ -22,11 +22,13 @@
 #  });
 #</script>
 
+import os
 import json
 import datetime
 from hspider.items import HouseItem
 from scrapy import Spider
 
+# detail/newDetail => validate json
 def jsstr2jsonstr(jsstr):
     def filterit(s):
         s = s.strip().split(':')
@@ -40,14 +42,26 @@ def jsstr2jsonstr(jsstr):
     tmp2 = [makeit(v) for v in tmp[1:-1] if filterit(v)]
     return '{' + ''.join(tmp2) + '}'
 
+def generate_house_urls():
+    try:
+        f = open(r'house_urls.json')
+        ret = json.load(f)
+        f.close()
+        ret = [v['url'] for v in ret]
+    except:
+        ret = []
+    return ret
+
 class HouseSpider(Spider):
     name = "house_spider" 
     allowed_domains = ["lianjia.com"] 
-    start_urls = [ 
-        "http://gz.lianjia.com/ershoufang/GZ0001571784.html",
-        "http://gz.lianjia.com/ershoufang/GZ0001535703.html",
-    ]
-
+    #start_urls = [ 
+    #    "http://gz.lianjia.com/ershoufang/GZ0001571784.html",
+    #    "http://gz.lianjia.com/ershoufang/GZ0001535703.html",
+    #    "http://gz.lianjia.com/ershoufang/GZ0001558387.html",
+    #]
+    start_urls = generate_house_urls()
+    
     def parse(self, response): 
         a = response.xpath('//script').extract()
         b = [v for v in a if v.find('detail/newDetail') != -1]
@@ -60,7 +74,8 @@ class HouseSpider(Spider):
         item['area']          = float(d['area'])
         item['price']         = int(d['price'])
         item['total_price']   = int(d['totalPrice'])
-        item['resblock_id']   = d['resblockId']
-        item['resblock_name'] = d['resblockName']
+        item['xiaoqu_id']     = d['resblockId']
+        item['xiaoqu_name']   = d['resblockName']
         item['url']           = response.url
+        item['house_id']      = response.url.split('/')[-1].split('.')[0]
         yield item
