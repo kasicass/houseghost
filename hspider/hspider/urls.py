@@ -14,4 +14,9 @@ XIAOQU_URLS = (
     #珠江新城中区
     'http://gz.lianjia.com/ershoufang/c2111103318061/',    # 保利心语
     'http://gz.lianjia.com/ershoufang/c2111103319096/',    # 中海花城湾
+    
+    #珠江新城西区
+    'http://gz.lianjia.com/ershoufang/c2110343238861180/', # 星汇园A区
+    'http://gz.lianjia.com/ershoufang/c2110343238861179/', # 星汇园B区
+    'http://gz.lianjia.com/ershoufang/c2110343238861178/', # 星汇园C区
 )
