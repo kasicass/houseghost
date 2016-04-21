@@ -16,11 +16,18 @@ import sys
 import json
 import codecs
 
+def house_sort(a, b):
+    v1 = cmp(a['xiaoqu_name'], b['xiaoqu_name'])
+    if v1 == 0:
+        v2 = cmp(a['price'], b['price'])
+        return v2
+    return v1
+
 if __name__ == '__main__':
     with open(sys.argv[1]) as f:
         houses = json.load(f)
     
-    houses.sort(lambda a, b: cmp(a['xiaoqu_name'], b['xiaoqu_name']))
+    houses.sort(house_sort)
     
     with codecs.open(sys.argv[2], "w", "utf-8") as f:
         f.write(u"<html>\n")
