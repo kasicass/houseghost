@@ -7,6 +7,10 @@ XIAOQU_URLS = (
     'http://gz.lianjia.com/ershoufang/c2111103317501/',    # 理想青年荟
     'http://gz.lianjia.com/ershoufang/c2111103317230/',    # 隽园
     'http://gz.lianjia.com/ershoufang/c2111103317088/',    # 东方新世界
+    'http://gz.lianjia.com/ershoufang/c2111103316395/',    # 新世界东逸花园
+    'http://gz.lianjia.com/ershoufang/c2110343238861662/', # 东晖花园朝阳居
+    'http://gz.lianjia.com/ershoufang/c2110343238861662/', # 东晖花园旭日居
+    'http://gz.lianjia.com/ershoufang/c2111103317951/',    # 东方都会广场
     
     #天河北
     'http://gz.lianjia.com/ershoufang/c219161404853500/',  # 峻林
