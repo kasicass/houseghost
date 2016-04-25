@@ -15,6 +15,10 @@ XIAOQU_URLS = (
     #天河北
     'http://gz.lianjia.com/ershoufang/c219161404853500/',  # 峻林
     'http://gz.lianjia.com/ershoufang/c2111103316532/',    # 伊顿18(天誉华庭)
+    'http://gz.lianjia.com/ershoufang/c2111103319393/',    # 协和新世界(芳草园二期)
+    'http://gz.lianjia.com/ershoufang/c2110343238337003/', # 芳草园A区
+    'http://gz.lianjia.com/ershoufang/c2110343238336968/', # 芳草园B区
+    'http://gz.lianjia.com/ershoufang/c2110343238336942/', # 芳草园C区
     
     #珠江新城东区
     'http://gz.lianjia.com/ershoufang/c2110343238599296/', # 凯旋新世界广粤尊府
