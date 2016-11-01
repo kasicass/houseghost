@@ -19,6 +19,8 @@ XIAOQU_URLS = (
     'http://gz.lianjia.com/ershoufang/c2110343238337003/', # 芳草园A区
     'http://gz.lianjia.com/ershoufang/c2110343238336968/', # 芳草园B区
     'http://gz.lianjia.com/ershoufang/c2110343238336942/', # 芳草园C区
+    'http://gz.lianjia.com/ershoufang/c2111103318185/',    # 天河新作
+    'http://gz.lianjia.com/ershoufang/c2111103317003/',    # 帝景苑
     
     #珠江新城东区
     'http://gz.lianjia.com/ershoufang/c2110343238599296/', # 凯旋新世界广粤尊府
@@ -36,6 +38,18 @@ XIAOQU_URLS = (
     'http://gz.lianjia.com/ershoufang/c2110343238861180/', # 星汇园A区
     'http://gz.lianjia.com/ershoufang/c2110343238861179/', # 星汇园B区
     'http://gz.lianjia.com/ershoufang/c2110343238861178/', # 星汇园C区
+    
+    #金融城
+    'http://gz.lianjia.com/ershoufang/c2110343238599367/', # 美林海岸花园云河轩
+    'http://gz.lianjia.com/ershoufang/c2110343238337308/', # 美林海岸花园临江湾
+    'http://gz.lianjia.com/ershoufang/c2110343238599529/', # 美林海岸花园碧水轩
+    'http://gz.lianjia.com/ershoufang/c2110343238337307/', # 美林海岸花园御江湾
+    'http://gz.lianjia.com/ershoufang/c2110343238599527/', # 美林海岸花园海星苑
+    'http://gz.lianjia.com/ershoufang/c2110343238599368/', # 美林海岸花园美林湾畔
+    'http://gz.lianjia.com/ershoufang/c2110343238599526/', # 美林海岸花园海天苑
+    'http://gz.lianjia.com/ershoufang/c2110343238337306/', # 美林海岸花园逸江湾
+    'http://gz.lianjia.com/ershoufang/c2110343238599365/', # 美林海岸花园蓝月湾畔
+    'http://gz.lianjia.com/ershoufang/c2110343238599366/', # 美林海岸花园翠堤湾畔
     
     #车陂
     'http://gz.lianjia.com/ershoufang/c2110343238336894/', # 富力天朗明居S区
